@@ -29,7 +29,7 @@ const asyncHandler = (fn) => async (req, res, next) => {
 //! better way is to use Promise.resolve and catch
 //! this way we don't have to use try catch block
 const asyncHandler = (requestHandler) => {
-  (req, res, next) => {
+  return (req, res, next) => {
     Promise.resolve(requestHandler(req, res, next)).catch((error) =>
       next(error)
     );
