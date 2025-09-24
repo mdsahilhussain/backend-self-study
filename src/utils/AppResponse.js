@@ -22,6 +22,8 @@ class ApiResponse {
   }
 }
 
+export { ApiResponse };
+
 /* //! Note: Samajhne ka simple flow:
 	1.	Jab bhi API se response bhejna ho, toh is class ka ek object banega.
 	2.	Us object me hamesha statusCode, data, message aur success flag honge → ek consistent structure milta hai har API ke liye.
