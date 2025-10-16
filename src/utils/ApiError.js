@@ -37,10 +37,8 @@ class ApiError extends Error {
   }
 }
 
-export default ApiError;
+export { ApiError };
 // 👉 Class ko export default kar diya gaya hai taaki dusre files me easily import kiya ja sake.
-
-
 
 /* //! Note: Easy Explanation:
 	•	ApiError ek custom error handler hai.

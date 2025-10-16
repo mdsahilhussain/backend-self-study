@@ -28,7 +28,7 @@ app.use(express.static("public"));
 app.use(cookieParser());
 
 // import routes
-import userRouter from './routes/user.route.js'
+import userRouter from "./routes/user.route.js";
 
 // routes declaration
 // app.get --> hmlog router 1 hi file me likht rhai thai to get ka use kr letai thai
@@ -36,6 +36,6 @@ import userRouter from './routes/user.route.js'
 // but ab hmlog sb kuch alg alg kr diya hai to hmai middleware ka use krna hoga.
 // http://localhost:8000/api/v1/users/register
 
-app.use('/api/v1/users', userRouter)
+app.use("/api/v1/users", userRouter);
 
 export default app;
